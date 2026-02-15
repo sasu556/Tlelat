@@ -1,0 +1,5 @@
+# netlify.toml
+[[redirects]]
+from = "/api/*"
+to = "https://mawaqit.net/api/2.0/:splat"
+status = 200

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقيت الصلاة - مسجد سمية بنت الخياط</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">مواقيت الصلاة | تليلات</div>
+            <ul class="nav-links">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">القرآن الكريم</a></li>
+                <li><a href="#">أحاديث نبوية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="prayer-card">
+            <div class="card-header">
+                <h2>مسجد سمية بنت الخياط</h2>
+                <p id="date-display"></p>
+            </div>
+            
+            <div class="countdown-container">
+                <p>الصلاة القادمة: <span id="next-prayer-name">--</span></p>
+                <div id="countdown-timer">00:00:00</div>
+            </div>
+
+            <div class="prayer-times">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الصلاة</th>
+                            <th>الأذان</th>
+                        </tr>
+                    </thead>
+                    <tbody id="prayer-times-body">
+                        <!-- سيتم ملء مواقيت الصلاة هنا بواسطة JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - تم التطوير لخدمة أهالي بلدية تليلات</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* style.css (Updated) */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    /* خلفية جديدة مستوحاة من الصورة */
+    background-color: #fdfaf3;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/islamic-geometric.png');
+    color: #4a2c2a; /* بني داكن للنص */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a2c2a; /* بني داكن للشريط العلوي */
+    padding: 10px 30px;
+    color: #fdfaf3; /* بيج فاتح للنص */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-family: 'Amiri', serif;
+    font-size: 1.6em; /* تصغير حجم الشعار قليلاً */
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #fdfaf3;
+    text-decoration: none;
+    font-size: 0.9em; /* تصغير حجم خط الروابط */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e6b800; /* لون ذهبي عند المرور */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.prayer-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* تصغير عرض البطاقة */
+    text-align: center;
+    border: 1px solid #e6b800; /* إطار ذهبي */
+}
+
+.card-header h2 {
+    font-family: 'Amiri', serif;
+    font-size: 1.8em;
+    margin: 0 0 5px 0;
+    color: #4a2c2a;
+}
+
+.card-header p {
+    font-size: 1em; /* تصغير حجم خط التاريخ */
+    color: #555;
+    margin: 0;
+}
+
+.countdown-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fdfaf3;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.countdown-container p {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+#next-prayer-name {
+    font-weight: bold;
+    color: #4a2c2a;
+}
+
+#countdown-timer {
+    font-size: 2.5em; /* تصغير حجم العداد */
+    font-weight: bold;
+    color: #d9534f;
+    letter-spacing: 2px;
+}
+
+.prayer-times table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.prayer-times th, .prayer-times td {
+    padding: 10px; /* تقليل الحشو الداخلي */
+    border-bottom: 1px solid #f0eade;
+}
+
+.prayer-times th {
+    background-color: #f8f4eb;
+    font-size: 1em;
+}
+
+.prayer-times td {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.prayer-times tr.next-prayer {
+    background-color: #fdf8e1; /* تمييز الصلاة القادمة بلون بيج مائل للذهبي */
+    color: #4a2c2a;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4a2c2a;
+    color: #fdfaf3;
+    font-size: 0.9em;
+}
